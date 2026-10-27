@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Frame renderer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/__shared/base.css">
+<link rel="stylesheet" href="/style.css">
+<style>
+html,body{background:#000;width:360px;height:640px;overflow:hidden}
+#root{position:relative;width:360px;height:640px;overflow:hidden}
+#wipe{position:absolute;inset:0;background:#ffd23f;transform:translateX(-101%);z-index:5;pointer-events:none}
+</style>
+</head>
+<body>
+<div id="root"><div id="scene-host"></div><div id="wipe"></div><div class="safeov"><i class="zt"></i><i class="zb"></i><i class="zr"></i></div></div>
+<script>if (location.search.includes('safe=1')) document.body.classList.add('show-safe');</script>
+<script src="/__shared/engine.js"></script>
+<script src="/scenes.js"></script>
+</body>
+</html>

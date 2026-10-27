@@ -1,0 +1,8 @@
+[
+  { "min": 7, "text": "Would you take one million dollars right now <break time=\"0.4s\" /> or one dollar that doubles every single day?" },
+  { "min": 8, "text": "Day one, you get one dollar. Day two, two dollars. <break time=\"0.3s\" /> Day three, four. And the pile of coins doubles in height every day." },
+  { "min": 7, "text": "After a whole week, you only have one hundred twenty-seven dollars. <break time=\"0.3s\" /> A stack shorter than a ruler. Sounds like a terrible deal, right?" },
+  { "min": 12, "text": "But now, stack those coins. By day ten, the tower is taller than a person. By day eighteen, it is taller than the Burj Khalifa. <break time=\"0.3s\" /> And on day twenty, you pass one million dollars." },
+  { "min": 12, "text": "By day twenty-three, it is taller than Mount Everest. By day twenty-six, it reaches space. <break time=\"0.3s\" /> And by day thirty, you have over one billion dollars." },
+  { "min": 5, "text": "So, would you still take the million? <break time=\"0.3s\" /> Follow for more mind-blowing math." }
+]

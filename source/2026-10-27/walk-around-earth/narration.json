@@ -1,0 +1,9 @@
+[
+  { "min": 7, "text": "If every step you take is seventy-five centimeters long <break time=\"0.4s\" /> how many steps would it take to walk around the entire world?" },
+  { "min": 6, "text": "The Earth is about forty thousand kilometers around. <break time=\"0.3s\" /> That is over forty million meters." },
+  { "min": 5, "text": "Divide that by seventy-five centimeters <break time=\"0.3s\" /> and the math gets wild." },
+  { "min": 6, "text": "That is fifty-three million steps. <break time=\"0.4s\" /> Just to get back where you started." },
+  { "min": 7, "text": "Walk ten thousand steps every single day <break time=\"0.3s\" /> and you will need over five thousand days." },
+  { "min": 6, "text": "That is more than fourteen years of nonstop walking. <break time=\"0.3s\" /> No days off." },
+  { "min": 4, "text": "Still want to try? <break time=\"0.3s\" /> Follow for more mind-blowing math." }
+]

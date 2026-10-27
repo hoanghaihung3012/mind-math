@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storyboard Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/__shared/base.css">
+<link rel="stylesheet" href="/__shared/storyboard.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <h1>Storyboard Preview: <span id="title"></span></h1>
+  <div class="chips" id="chips"></div>
+</header>
+<div class="layout">
+  <aside class="player">
+    <div class="stage" id="main"><div class="inner"></div><div class="wipe"></div></div>
+    <div class="prog"><i id="prog"></i></div>
+    <div class="dots" id="dots"></div>
+    <div class="controls">
+      <button class="btn-p" id="play">Play full preview</button>
+      <button class="btn-s" id="stop">Stop</button>
+      <button class="btn-s" id="safe" title="Show the areas covered by YouTube Shorts UI">Safe area</button>
+    </div>
+    <small>Click a number to jump to that scene.</small>
+  </aside>
+  <main class="cards" id="cards"></main>
+</div>
+<script src="/__shared/engine.js"></script>
+<script src="/scenes.js"></script>
+<script src="/__shared/storyboard.js"></script>
+</body>
+</html>

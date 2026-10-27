@@ -1,0 +1,27 @@
+{
+  "titles": [
+    "Title option 1 (question or shock number first)",
+    "Title option 2",
+    "Title option 3"
+  ],
+  "description": [
+    "<Hook question again, one sentence> 🧠",
+    "",
+    "<One-sentence answer with the biggest number.>",
+    "",
+    "The math:",
+    "• <fact with unit>",
+    "• <calculation step>",
+    "• <final result>",
+    "",
+    "All numbers are approximate.",
+    "",
+    "<Question to the viewer> 👇",
+    "",
+    "👉 Subscribe to Mind Math for more mind-blowing math in under 60 seconds.",
+    "",
+    "#Shorts #MindMath #MathFacts #DidYouKnow"
+  ],
+  "tags": ["mind math", "math facts", "mind blowing facts", "math shorts", "did you know"],
+  "pinnedComment": "A question the viewer can answer with a number or a choice."
+}

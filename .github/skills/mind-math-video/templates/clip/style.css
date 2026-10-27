@@ -1,0 +1,11 @@
+/* Scene-specific styles. Base classes and generic keyframes (pop, wordin, grow, draw, spin, pulse...) come from shared/base.css.
+   Safe area: keep text between y 52 and 440 (the caption sits just below) and left of x 300 below y 270. Run `mm safe` to check. */
+.b1{background:linear-gradient(#1b1f5e,#3b2a7a 55%,#0b0f1f)}
+.title{top:70px;left:14px;right:14px;font-size:34px;line-height:1.12;font-weight:900;text-align:center;text-transform:uppercase}
+.title span{display:inline-block;opacity:0;animation:wordin .45s calc(var(--i)*.16s + .2s) cubic-bezier(.2,1.6,.4,1) both}
+.hero{left:120px;top:190px;width:100px;height:200px}
+
+.b2{background:radial-gradient(circle at 50% 40%,#5a1a6e,#14082b 75%)}
+.cnt{top:200px;font-size:54px;font-weight:900;color:var(--yellow);text-shadow:0 5px 0 #a8801a,0 0 30px #ffd23f66;font-variant-numeric:tabular-nums}
+.stamp{top:320px;left:50%;translate:-50% 0;background:var(--yellow);color:#111;padding:8px 20px;font-size:30px;font-weight:900;border-radius:10px;white-space:nowrap;animation:stamp .45s 2.9s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes stamp{from{opacity:0;transform:scale(3) rotate(-18deg)}to{opacity:1;transform:scale(1) rotate(-5deg)}}

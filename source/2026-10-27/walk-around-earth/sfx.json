@@ -1,0 +1,5 @@
+[
+  { "type": "thud", "scene": 4, "at": 3.55 },
+  { "type": "thud", "scene": 6, "at": 0.45 },
+  { "type": "thud", "scene": 7, "at": 0.9 }
+]

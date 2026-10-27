@@ -1,0 +1,90 @@
+/* Scene-specific styles. Base classes (.scene .bg .stars .cap .abs .c .walker) and generic keyframes live in the skill's shared/base.css. */
+/* Legacy: made before the safe-area rules; captions sit low and are partly covered by Shorts UI. Do not copy. */
+.cap{left:18px;right:18px;bottom:44px;font-size:19px}
+
+/* scene 1 */
+.b1{background:linear-gradient(#1b1f5e,#3b2a7a 55%,#0b0f1f)}
+.s1t{top:54px;left:24px;right:24px;font-size:33px;line-height:1.12;font-weight:900;text-align:center;text-transform:uppercase}
+.s1t span{display:inline-block;opacity:0;animation:wordin .45s calc(var(--i)*.16s + .2s) cubic-bezier(.2,1.6,.4,1) both}
+.s1w{left:130px;top:228px;width:100px;height:200px;animation:float 1.2s ease-in-out infinite alternate}
+@keyframes float{to{transform:translateY(-2px)}}
+.ground{left:0;right:0;top:428px;bottom:0;background:linear-gradient(#2d6a4f 0 14px,#1b4332 14px)}
+.ground::after{content:"";position:absolute;left:0;right:0;top:34px;height:6px;background:repeating-linear-gradient(90deg,#fff4 0 30px,transparent 30px 60px);animation:slide 1s linear infinite}
+.ruler{left:90px;top:452px;width:180px;height:18px;border-radius:4px;background:var(--yellow) repeating-linear-gradient(90deg,#0007 0 2px,transparent 2px 12px);transform-origin:left;animation:grow .6s 1.6s cubic-bezier(.2,1.4,.4,1) both}
+.rl{top:476px;font-size:36px;font-weight:900;color:var(--yellow);animation:pop .5s 2.1s cubic-bezier(.2,1.5,.4,1) both}
+
+/* scene 2 */
+.b2{background:radial-gradient(circle at 50% 45%,#12296b,#050816 70%)}
+.pill{top:34px;left:50%;translate:-50% 0;background:var(--pink);padding:6px 22px;border-radius:99px;font-size:30px;font-weight:900;white-space:nowrap;animation:pop .6s .5s cubic-bezier(.2,1.5,.4,1) both;box-shadow:0 6px 0 #9c2a42}
+.gw{left:50px;top:160px;width:260px;height:260px;animation:gin .8s cubic-bezier(.2,1.2,.4,1) both;filter:drop-shadow(0 0 30px #4cc9f088)}
+@keyframes gin{from{transform:scale(.3) rotate(-40deg);opacity:0}to{transform:none;opacity:1}}
+.cont{animation:drift 10s linear infinite}
+@keyframes drift{to{transform:translateX(-260px)}}
+.eq{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2s .9s ease-in-out forwards}
+.s2w{left:165px;top:100px;width:30px;height:60px;animation:pop .4s 1s both}
+.sub2{top:446px;font-size:18px;color:var(--mut);font-weight:700;animation:capin .5s 2.2s both}
+
+/* scene 3 */
+.b3{background:linear-gradient(160deg,#0f3d5e,#1b1f5e 60%,#2a0f3d)}
+.sym{position:absolute;font-size:34px;font-weight:900;color:#fff2;animation:rise 6s linear infinite}
+@keyframes rise{from{transform:translateY(700px) rotate(0)}to{transform:translateY(-100px) rotate(180deg)}}
+.m{position:absolute;left:0;right:0;text-align:center;font-weight:900;white-space:nowrap}
+.m1{top:140px;font-size:46px;color:var(--cyan);animation:fromL .6s .2s cubic-bezier(.2,1.2,.4,1) both}
+.m2{top:215px;font-size:54px;color:var(--yellow);animation:fromR .6s 1s cubic-bezier(.2,1.2,.4,1) both}
+@keyframes fromL{from{transform:translateX(-400px)}to{transform:none}}
+@keyframes fromR{from{transform:translateX(400px)}to{transform:none}}
+.mline{left:50px;right:50px;top:310px;height:6px;background:#fff;border-radius:9px;transform-origin:left;animation:grow .5s 1.8s both}
+.m3{top:335px;font-size:50px;color:var(--pink);animation:pop .5s 2.2s cubic-bezier(.2,1.5,.4,1) both}
+.m3 span{display:inline-block;animation:wob .35s infinite alternate}
+
+/* scene 4 */
+.b4{background:radial-gradient(circle at 50% 40%,#5a1a6e,#14082b 75%)}
+.rays{left:-100px;top:-40px;width:560px;height:560px;background:repeating-conic-gradient(#ffffff14 0 10deg,transparent 10deg 20deg);animation:spin 14s linear infinite;border-radius:50%}
+.thats{top:110px;font-size:22px;font-weight:800;color:var(--mut);letter-spacing:.2em;animation:capin .4s both}
+.cnt{top:150px;font-size:54px;font-weight:900;color:var(--yellow);text-shadow:0 5px 0 #a8801a,0 0 30px #ffd23f66;font-variant-numeric:tabular-nums}
+.steps{top:225px;font-size:44px;font-weight:900;letter-spacing:.12em;animation:capin .4s .3s both}
+.fps{left:0;right:0;top:330px;display:flex;justify-content:center;gap:8px}
+.fps i{width:16px;height:26px;border-radius:50% 50% 45% 45%;background:var(--cyan);opacity:0;animation:fp .35s calc(var(--i)*.22s + .4s) both}
+.fps i:nth-child(even){margin-top:22px;background:var(--pink)}
+@keyframes fp{from{opacity:0;transform:scale(2)}to{opacity:1;transform:none}}
+.stamp{top:420px;left:50%;translate:-50% 0;background:var(--yellow);color:#111;padding:8px 20px;font-size:30px;font-weight:900;border-radius:10px;white-space:nowrap;animation:stamp .45s 3.3s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes stamp{from{opacity:0;transform:scale(3) rotate(-18deg)}to{opacity:1;transform:scale(1) rotate(-5deg)}}
+
+/* scene 5 */
+.b5{background:linear-gradient(#0d3b3a,#102a56 60%,#0b0f1f)}
+.ring{left:90px;top:64px;width:180px;height:180px;animation:pop .6s both}
+.ring circle{fill:none;stroke-width:14;stroke-linecap:round}
+.ring .pg{stroke:var(--cyan);stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s .3s ease-out forwards;filter:drop-shadow(0 0 6px var(--cyan))}
+.ringtxt{left:90px;top:112px;width:180px;text-align:center;font-size:34px;font-weight:900;font-variant-numeric:tabular-nums}
+.ringtxt small{display:block;font-size:12px;color:var(--mut);letter-spacing:.2em;margin-top:-6px}
+.perday{top:254px;font-size:20px;font-weight:800;color:var(--mut);animation:capin .5s 1.2s both}
+.days{top:300px;font-size:50px;font-weight:900;color:var(--yellow);font-variant-numeric:tabular-nums;animation:pop .5s 1.9s both}
+.days small{font-size:24px;color:#fff}
+.grid{left:36px;top:410px;width:288px;display:grid;grid-template-columns:repeat(16,14px);gap:4px}
+.grid i{height:14px;border-radius:3px;background:#ffffff18;animation:fill .2s calc(var(--i)*.022s + 2s) both}
+@keyframes fill{to{background:var(--yellow);box-shadow:0 0 6px #ffd23f88;transform:scale(1.05)}}
+
+/* scene 6 */
+.b6{animation:season 8s linear infinite alternate;background:#3a7d44}
+@keyframes season{0%{background:#3a7d44}33%{background:#d9a441}66%{background:#c1553b}100%{background:#4a79ad}}
+.dim{background:linear-gradient(#0008,#000a)}
+.big{top:84px;font-size:150px;line-height:1.05;font-weight:900;animation:bigin .8s cubic-bezier(.2,1.5,.4,1) both;text-shadow:0 8px 0 #0006}
+.big span{color:var(--yellow)}
+.yrs{top:250px;font-size:46px;font-weight:900;letter-spacing:.25em;animation:capin .4s .6s both}
+.sub6{top:312px;font-size:17px;font-weight:700;color:#ffe;animation:capin .5s 1.1s both}
+.s6w{top:372px;left:30px;width:36px;height:72px;animation:trek 4.5s .8s linear both}
+@keyframes trek{to{left:294px}}
+.track{left:30px;width:300px;top:452px;height:10px;border-radius:9px;background:#fff3}
+.track i{display:block;height:100%;border-radius:9px;background:var(--yellow);animation:wfill 4.5s .8s linear both}
+@keyframes wfill{from{width:0}to{width:100%}}
+.yr{top:476px;font-size:20px;font-weight:800}
+.yr b{color:var(--yellow);font-variant-numeric:tabular-nums}
+
+/* scene 7 */
+.b7{background:radial-gradient(circle at 50% 50%,#1b2a70,#07091a 75%)}
+.cta{top:70px;left:24px;right:24px;font-size:38px;line-height:1.15;font-weight:900;text-align:center;animation:wordin .6s .2s cubic-bezier(.2,1.6,.4,1) both}
+.foot{left:100px;top:190px;width:160px;height:230px;animation:stampf .5s .7s cubic-bezier(.2,1.5,.4,1) both;filter:drop-shadow(0 0 20px #ffd23f88)}
+@keyframes stampf{from{opacity:0;transform:scale(3) rotate(-20deg)}to{opacity:1;transform:rotate(-8deg)}}
+.rip{left:80px;top:230px;width:200px;height:200px;border:4px solid var(--yellow);border-radius:50%;opacity:0;animation:rip 1.6s 1.1s ease-out infinite}
+.follow{top:452px;left:50%;translate:-50% 0;background:var(--pink);padding:10px 28px;border-radius:99px;font-size:22px;font-weight:900;white-space:nowrap;box-shadow:0 6px 0 #9c2a42;animation:pulse 1s 1.4s ease-in-out infinite alternate both}
+.src{bottom:14px;font-size:11px;color:var(--mut);position:absolute;left:0;right:0;text-align:center;z-index:2}

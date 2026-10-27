@@ -1,0 +1,71 @@
+/* Scene-specific styles. Base classes, generic keyframes and the safe-area variables come from shared/base.css.
+   Layout rule: text between y 52 and 440 (the caption sits just below), nothing important right of x 300 below y 270. */
+.coin{border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffe27a,#e6a817);border:3px solid #b57a00;display:flex;align-items:center;justify-content:center;font-weight:900;color:#7a4b00;box-shadow:0 5px 0 #8a5a00,inset 0 -4px 0 #0002;flex:none}
+.day{top:68px;font-size:22px;font-weight:900;letter-spacing:.18em;color:var(--cyan);text-shadow:0 2px 0 #0008}
+.amt{top:92px;font-size:44px;font-weight:900;color:var(--yellow);text-shadow:0 5px 0 #a8801a,0 0 30px #ffd23f66;font-variant-numeric:tabular-nums}
+
+/* scene 1 */
+.b1{background:linear-gradient(#1b1f5e,#3b2a7a 55%,#0b0f1f)}
+.title{top:70px;left:14px;right:14px;font-size:31px;line-height:1.1;font-weight:900;text-align:center;text-transform:uppercase}
+.title span,.cta span{display:inline-block;opacity:0;animation:wordin .45s calc(var(--i)*.16s + .2s) cubic-bezier(.2,1.6,.4,1) both}
+.optA,.optB{left:16px;right:62px;height:104px;border-radius:20px;padding:14px 18px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 8px 0 #0005}
+.optA{top:156px;background:linear-gradient(#2ecc71,#1b8f4d);animation:fromL .6s .9s cubic-bezier(.2,1.2,.4,1) both}
+.optA small,.optB small{font-size:12px;font-weight:800;letter-spacing:.2em;opacity:.85}
+.optA b{font-size:36px;font-weight:900;line-height:1.1}
+.or{top:248px;left:156px;translate:-50% 0;width:46px;height:46px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;box-shadow:0 5px 0 #9c2a42;animation:pop .5s 2.4s cubic-bezier(.2,1.6,.4,1) both;z-index:2}
+.optB{top:282px;flex-direction:row;align-items:center;gap:14px;background:linear-gradient(#ffd23f,#e0a800);color:#3a2600;animation:fromR .6s 2.8s cubic-bezier(.2,1.2,.4,1) both}
+.optB b{display:block;font-size:24px;font-weight:900;line-height:1.1}
+@keyframes fromL{from{transform:translateX(-420px)}to{transform:none}}
+@keyframes fromR{from{transform:translateX(420px)}to{transform:none}}
+
+/* scene 2: stacks of coins, each twice as tall as the previous */
+.b2{background:linear-gradient(160deg,#0d3b3a,#102a56 60%,#0b0f1f)}
+.rule{top:68px;font-size:24px;font-weight:900;text-transform:uppercase;animation:capin .5s .1s both}
+.x2{display:inline-block;background:var(--pink);border-radius:10px;padding:0 8px;margin-left:6px;animation:pulse .6s infinite alternate}
+.stks{left:16px;right:64px;top:112px;height:270px;display:flex;justify-content:space-between;align-items:flex-end}
+.sw{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px}
+.sw b{font-size:14px;font-weight:900;color:var(--yellow);opacity:0;animation:pop .4s var(--d) both}
+.stk{display:flex;flex-direction:column-reverse;width:36px}
+.stk i{height:6px;margin-top:1px;border-radius:3px;background:linear-gradient(90deg,#8a5a00,#ffe27a 40%,#e6a817 70%,#8a5a00);opacity:0;animation:drop .2s calc(var(--d) + var(--i)*.035s) ease-in both}
+@keyframes drop{from{opacity:0;transform:translateY(-120px)}to{opacity:1;transform:none}}
+.dls{left:16px;right:64px;top:388px;display:flex;justify-content:space-between}
+.dls span{width:36px;text-align:center;font-size:9px;font-weight:800;letter-spacing:.03em;color:var(--mut)}
+.note2{top:414px;left:16px;right:64px;text-align:center;font-size:15px;font-weight:800;color:var(--cyan);animation:capin .5s 5.5s both}
+
+/* chart (scene 3) */
+.chart{left:16px;right:64px;top:174px;height:230px;display:flex;align-items:flex-end;gap:3px}
+.chart i{flex:1;height:max(3px,calc(var(--h)*230px));background:var(--cyan);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barup .3s calc(var(--i)*var(--step) + var(--start)) cubic-bezier(.2,1.4,.4,1) both}
+@keyframes barup{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.base{left:16px;right:64px;top:404px;height:3px;background:#fff4;border-radius:2px}
+.b3{background:linear-gradient(160deg,#3b1020,#1b1f5e 60%,#0b0f1f)}
+.mil{left:16px;top:174px;width:124px;height:230px;background:linear-gradient(#2ecc71,#1b8f4d);border-radius:10px 10px 0 0;transform-origin:bottom;animation:barup .6s .1s cubic-bezier(.2,1.2,.4,1) both;text-align:center;padding-top:10px;font-size:18px;box-shadow:0 0 24px #2ecc7166}
+.small{left:150px;right:64px}
+.lbl2{top:412px;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--mut);animation:capin .4s 1s both}
+.l1{left:16px}.l2{left:150px}
+.hgt3{top:146px;font-size:14px;font-weight:800;color:var(--cyan);animation:capin .5s 4.2s both}
+
+/* scenes 4-5: coin tower with real-scale comparisons (positions are set by towerUpdate in scenes.js) */
+#stw{position:absolute;inset:0}
+.ground2{left:0;right:0;top:404px;bottom:0;background:linear-gradient(#2d6a4f 0 8px,#1b4332 8px)}
+.tw{left:30px;top:174px;width:56px;height:230px;border-radius:6px 6px 0 0;box-shadow:0 0 24px #ffd23f88}
+.hgt{left:10px;width:96px;top:148px;text-align:center;font-size:15px;font-weight:900;color:#fff;text-shadow:0 2px 0 #0009;font-variant-numeric:tabular-nums}
+.obj{position:absolute;bottom:236px;display:none}
+.obj svg{width:100%;height:100%;display:block}
+.ol{position:absolute;left:50%;bottom:100%;transform:translateX(-50%);margin-bottom:3px;white-space:nowrap;text-align:center;font-size:10px;font-weight:800;line-height:1.15;text-shadow:0 1px 0 #000,0 0 6px #000}
+.mk{left:0;right:0;height:0;border-top:2px dashed #ffffff99;display:none}
+.mk span{position:absolute;right:66px;bottom:3px;display:flex;align-items:center;gap:5px;font-size:11px;font-weight:900;text-shadow:0 1px 0 #000,0 0 6px #000}
+.stamp{left:50%;translate:-50% 0;background:var(--yellow);color:#111;padding:6px 16px;font-size:24px;font-weight:900;border-radius:10px;white-space:nowrap;animation:stamp .45s var(--d) cubic-bezier(.2,1.6,.4,1) both;z-index:3}
+.stamp.k2{background:var(--pink);color:#fff;font-size:22px}
+@keyframes stamp{from{opacity:0;transform:scale(3) rotate(-18deg)}to{opacity:1;transform:scale(1) rotate(-5deg)}}
+
+/* scene 6 */
+.b7{background:radial-gradient(circle at 50% 50%,#1b2a70,#07091a 75%)}
+.cta{top:70px;left:14px;right:14px;font-size:34px;line-height:1.15;font-weight:900;text-align:center;text-transform:uppercase}
+.btnA,.btnB{left:16px;right:62px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900}
+.btnA{top:172px;background:#3b4468;color:#aab;animation:pop .5s .9s cubic-bezier(.2,1.5,.4,1) both,fadeout .5s 2.2s forwards}
+.btnA::after{content:"";position:absolute;left:20px;right:20px;top:50%;height:5px;background:var(--pink);border-radius:3px;transform-origin:left;animation:grow .4s 1.8s both}
+@keyframes fadeout{to{opacity:.35}}
+.btnB{top:248px;background:linear-gradient(#ffd23f,#e0a800);color:#3a2600;box-shadow:0 6px 0 #8a5a00,0 0 30px #ffd23f88;animation:pop .5s 1.3s cubic-bezier(.2,1.5,.4,1) both,pulse 1s 2.4s ease-in-out infinite alternate}
+.rip{left:6px;right:54px;top:238px;height:78px;border:4px solid var(--yellow);border-radius:22px;opacity:0;animation:rip 1.6s 2.4s ease-out infinite}
+.follow{top:338px;left:156px;translate:-50% 0;background:var(--pink);padding:8px 24px;border-radius:99px;font-size:20px;font-weight:900;white-space:nowrap;box-shadow:0 6px 0 #9c2a42;animation:pop .5s 2.8s cubic-bezier(.2,1.5,.4,1) both}
+.src{top:408px;left:16px;right:64px;text-align:center;font-size:10px;color:var(--mut)}
