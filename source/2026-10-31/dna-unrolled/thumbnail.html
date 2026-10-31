@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thumbnail</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/__shared/base.css">
+<style>
+html,body{width:360px;height:640px;overflow:hidden;background:#07081a}
+.t{position:absolute;inset:0;overflow:hidden;color:#fff;font-family:Poppins,sans-serif;font-weight:900;text-align:center;background:radial-gradient(ellipse at 50% 28%,#3a2c8c,#14112d 60%,#07081a)}
+.rays{position:absolute;left:50%;top:30%;width:900px;height:900px;margin:-450px 0 0 -450px;background:repeating-conic-gradient(from 0deg,#ffd23f26 0 6deg,transparent 6deg 18deg);-webkit-mask:radial-gradient(circle,#000 0 16%,transparent 58%);mask:radial-gradient(circle,#000 0 16%,transparent 58%)}
+.a{position:absolute;left:12px;right:12px}
+.top{top:58px;font-size:34px;line-height:1.05;text-shadow:0 3px 0 #000}
+.hd{top:98px;font-size:22px;color:var(--cyan);text-shadow:0 2px 0 #000}
+.num{top:140px;font-size:92px;line-height:1;color:var(--yellow);text-shadow:0 6px 0 #a8801a,0 0 40px #ffd23f}
+.unit{top:236px;font-size:30px;text-shadow:0 3px 0 #ff4d6d,0 0 20px #000}
+.strand{position:absolute;left:170px;top:300px;width:22px;height:330px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 40'%3E%3Cg stroke-linecap='round'%3E%3Cpath d='M5 5h10M3.5 15h13M3.5 25h13M5 35h10' stroke='%23ffffff88' stroke-width='2.2'/%3E%3Cpath d='M2 0C2 10 18 10 18 20S2 30 2 40' fill='none' stroke='%234cc9f0' stroke-width='3'/%3E%3Cpath d='M18 0C18 10 2 10 2 20S18 30 18 40' fill='none' stroke='%23ff4d6d' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E") 0 0/22px 44px repeat-y;filter:drop-shadow(0 0 10px #4cc9f0);transform:rotate(14deg);transform-origin:bottom}
+.tip{position:absolute;left:240px;top:290px;width:40px;height:40px;border-radius:50%;background:radial-gradient(circle,#fff,#ffd23f 40%,#ff4d6d00 70%)}
+.earth{position:absolute;left:-120px;right:-120px;top:590px;height:600px;border-radius:50%;background:radial-gradient(circle at 50% 10%,#7ad7f0,#0b4fa3 50%);box-shadow:0 0 40px #4cc9f0aa}
+.p{position:absolute;border-radius:50%}
+.sun{left:22px;top:440px;width:90px;height:90px;background:radial-gradient(circle,#fff6c2,#ffd23f 45%,#ff9f1c 68%,#ff6b1c00 72%);box-shadow:0 0 50px #ffb703}
+.jup{left:84px;top:392px;width:46px;height:46px;background:repeating-linear-gradient(0deg,#d9a066 0 6px,#f2d3a2 6px 11px,#b5703f 11px 14px)}
+.nep{left:250px;top:420px;width:30px;height:30px;background:radial-gradient(circle at 35% 30%,#7aa7ff,#2443b5)}
+.plu{left:286px;top:356px;width:16px;height:16px;background:radial-gradient(circle at 35% 30%,#f1dcc2,#a68a6d)}
+.q{top:286px;left:34px;right:auto;font-size:56px;color:var(--pink);text-shadow:0 4px 0 #000;transform:rotate(-8deg)}
+</style>
+</head>
+<body>
+<div class="t">
+  <div class="rays"></div><div class="stars"></div>
+  <div class="earth"></div>
+  <div class="p sun"></div><div class="p jup"></div><div class="p nep"></div><div class="p plu"></div>
+  <div class="strand"></div><div class="tip"></div>
+  <div class="a top">ALL YOUR DNA</div>
+  <div class="a hd">UNROLLED =</div>
+  <div class="a num">~74</div>
+  <div class="a unit">BILLION KM</div>
+  <div class="a q">?!</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "volume": 0.7,
+  "style": "buildup",
+  "bpm": 135,
+  "drop": {
+    "scene": 4,
+    "at": 0.3
+  }
+}
