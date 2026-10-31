@@ -59,13 +59,12 @@ window.SCENES = [
         <div class="tlab l0">31,700<br>YRS AGO</div><div class="tlab l1">TODAY</div><div class="tlab band-l">WRITTEN HISTORY<br>~5,000 YRS</div></div>
       <div class="abs c ice">❄ ICE AGE ❄</div>` },
 
-  { title: 'Comment + loop', trans: 'End / loops to the hook', cap: 'Ready? One...',
-    visual: '"HOW FAR WOULD YOU GET?", comment bubble, Subscribe pill, then a giant "1" that loops into the hook.',
-    fx: 'Question pops, bubble wobbles, Subscribe pulses, the "1" slams in at the end.',
-    sfx: 'Pop on Comment, chime on Subscribe, a single clock tick on "One".',
+  { title: 'Comment + loop', trans: 'End', cap: 'Comment and subscribe',
+    visual: '"HOW FAR WOULD YOU GET?", comment bubble and Subscribe pill.',
+    fx: 'Question pops, bubble wobbles, Subscribe pulses.',
+    sfx: 'Pop on Comment, chime on Subscribe.',
     html: () => `${bg('b1', true)}<div class="abs c far">HOW FAR<br><span>WOULD YOU GET?</span></div>
-      <div class="abs c cta">${bubble}<b>COMMENT</b></div><div class="abs c sub">SUBSCRIBE</div>
-      <div class="abs c one">1</div>` },
+      <div class="abs c cta">${bubble}<b>COMMENT</b></div><div class="abs c sub">SUBSCRIBE</div>` },
 ];
 
 // [scene index, local start, duration, amplitude]; keep in step with sfx.json thuds

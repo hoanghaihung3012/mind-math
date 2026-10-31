@@ -58,16 +58,15 @@
 .tlab{position:absolute;top:140px;font-size:13px;font-weight:800;line-height:1.15;color:#fff}
 .l0{left:0}.l1{right:0;text-align:right}
 .band-l{top:4px;right:0;text-align:right;color:var(--pink);font-size:12px;animation:pop .4s 2.2s both}
-.ice{top:384px;font-size:34px;color:#bfe9ff;text-shadow:0 0 16px #4cc9f0,0 3px 0 #0008;animation:pop .5s 4.4s cubic-bezier(.2,1.5,.4,1) both}
+.ice{top:384px;font-size:34px;color:#bfe9ff;text-shadow:0 0 16px #4cc9f0,0 3px 0 #0008;animation:pop .5s 3.9s cubic-bezier(.2,1.5,.4,1) both}
 
-/* 6 CTA + loop */
-.far{top:76px;font-size:34px;line-height:1.1;animation:slam .5s .1s both}
+/* 6 CTA */
+.far{top:120px;font-size:34px;line-height:1.1;animation:slam .5s .1s both}
 .far span{color:var(--yellow)}
-.cta{top:184px;display:flex;align-items:center;justify-content:center;gap:12px;animation:pop .5s 1.6s cubic-bezier(.2,1.5,.4,1) both}
+.cta{top:236px;display:flex;align-items:center;justify-content:center;gap:12px;animation:pop .5s 1.6s cubic-bezier(.2,1.5,.4,1) both}
 .bub{width:58px;height:50px;flex:none;animation:wob .6s 1.9s ease-in-out infinite alternate}
 .cta b{font-size:32px;color:var(--cyan)}
-.sub{left:70px;right:70px;top:262px;padding:9px 0;border-radius:99px;background:var(--pink);font-size:24px;color:#fff;box-shadow:0 6px 0 #9c2a42;animation:pop .5s 2.5s cubic-bezier(.2,1.5,.4,1) both,pulse .8s 3.0s ease-in-out infinite alternate}
-.one{top:322px;font-size:100px;line-height:1;color:var(--yellow);text-shadow:0 6px 0 #a8801a,0 0 30px #ffd23f88;animation:slam .45s 3.95s both}
+.sub{left:70px;right:70px;top:318px;padding:9px 0;border-radius:99px;background:var(--pink);font-size:24px;color:#fff;box-shadow:0 6px 0 #9c2a42;animation:pop .5s 2.5s cubic-bezier(.2,1.5,.4,1) both,pulse .8s 3.0s ease-in-out infinite alternate}
 
 @keyframes slam{0%{opacity:0;transform:scale(2.4)}60%{opacity:1;transform:scale(.94)}100%{opacity:1;transform:scale(1)}}
 @keyframes flash{from{opacity:.6}to{opacity:0}}
@@ -77,3 +76,6 @@
 @keyframes growup{from{transform:scaleY(.45)}to{transform:scaleY(1)}}
 @keyframes travel{from{left:0}to{left:100%}}
 @keyframes pulse2{from{transform:scale(1)}to{transform:scale(1.05)}}
+
+/* no burned-in captions on this clip */
+.cap{display:none}
