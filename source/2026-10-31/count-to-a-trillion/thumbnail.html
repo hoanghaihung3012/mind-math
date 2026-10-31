@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thumbnail</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/__shared/base.css">
+<style>
+html,body{width:360px;height:640px;overflow:hidden;background:#090b18}
+.t{position:absolute;inset:0;overflow:hidden;color:#fff;font-family:Poppins,sans-serif;font-weight:900;text-align:center;background:radial-gradient(ellipse at 50% 46%,#4a3a9c,#11152d 66%,#090b18)}
+.rays{position:absolute;left:50%;top:46%;width:900px;height:900px;margin:-450px 0 0 -450px;background:repeating-conic-gradient(from 0deg,#ffd23f2e 0 6deg,transparent 6deg 18deg);-webkit-mask:radial-gradient(circle,#000 0 16%,transparent 58%);mask:radial-gradient(circle,#000 0 16%,transparent 58%)}
+.a{position:absolute;left:12px;right:12px}
+.top{top:70px;font-size:30px;line-height:1.05;text-shadow:0 3px 0 #000}
+.tr{top:106px;font-size:60px;line-height:1;color:var(--yellow);text-shadow:0 5px 0 #a8801a,0 0 30px #ffd23f88}
+.sec{top:176px;font-size:22px;color:var(--cyan);text-shadow:0 2px 0 #000}
+.num{top:232px;font-size:92px;line-height:1;color:#fff;text-shadow:0 6px 0 #ff4d6d,0 0 40px #ff4d6daa}
+.yrs{top:336px;left:50%;right:auto;translate:-50% 0;transform:rotate(-4deg);background:var(--yellow);color:#1b1f5e;padding:4px 26px;border-radius:12px;font-size:48px;white-space:nowrap;box-shadow:0 6px 0 #a8801a}
+.mam{position:absolute;left:22px;top:420px;width:96px;height:75px}
+.clock{position:absolute;right:26px;top:418px;width:80px;height:80px}
+.q{top:428px;font-size:58px;color:var(--pink);text-shadow:0 4px 0 #000}
+.a,.mam,.clock{margin-top:34px}
+</style>
+</head>
+<body>
+<div class="t">
+  <div class="rays"></div><div class="stars"></div>
+  <div class="a top">COUNTING TO</div>
+  <div class="a tr">1 TRILLION</div>
+  <div class="a sec">1 NUMBER / SECOND</div>
+  <div class="a num">31,700</div>
+  <div class="a yrs">YEARS!</div>
+  <svg class="mam" viewBox="0 0 90 70"><path d="M14 30c0-16 16-24 34-24s30 8 30 22v26h-9V40H58v14h-9V40H30v14h-9V40c-4-2-7-5-7-10z" fill="#a0764e"/><path d="M14 30c-6 6-8 16-3 24" stroke="#a0764e" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M18 38c4 8 14 10 20 4" stroke="#fff6dc" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="26" cy="22" r="3" fill="#1b1f5e"/></svg>
+  <div class="a q">?!</div>
+  <svg class="clock" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="#11152d" stroke="#4cc9f0" stroke-width="6"/><path d="M40 12v6M40 62v6M12 40h6M62 40h6" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M40 40V18M40 40l14 8" stroke="#ffd23f" stroke-width="5" stroke-linecap="round"/><circle cx="40" cy="40" r="4" fill="#ff4d6d"/></svg>
+</div>
+</body>
+</html>
