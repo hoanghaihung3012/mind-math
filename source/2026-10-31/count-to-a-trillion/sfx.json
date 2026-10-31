@@ -1,0 +1,20 @@
+[
+  { "type": "riser", "scene": 1, "at": 0, "duration": 0.7, "volume": 0.16 },
+  { "type": "thud", "scene": 1, "at": 0.7, "volume": 0.6 },
+  { "type": "chime", "scene": 1, "at": 0.75, "volume": 0.18 },
+  { "type": "tick", "scene": 1, "at": 1.6, "repeat": 3, "every": 1, "volume": 0.2 },
+  { "type": "pop", "scene": 1, "at": 3.3, "volume": 0.3 },
+  { "type": "tick", "scene": 2, "at": 0.35, "repeat": 8, "every": 0.12, "volume": 0.2 },
+  { "type": "chime", "scene": 2, "at": 1.55, "volume": 0.3 },
+  { "type": "tick", "scene": 3, "at": 0.35, "repeat": 6, "every": 0.12, "volume": 0.2 },
+  { "type": "chime", "scene": 3, "at": 1.35, "volume": 0.3 },
+  { "type": "riser", "scene": 4, "at": 1.0, "duration": 1.9, "volume": 0.12 },
+  { "type": "tick", "scene": 4, "at": 1.05, "repeat": 11, "every": 0.12, "volume": 0.22 },
+  { "type": "thud", "scene": 4, "at": 2.9, "volume": 1.3 },
+  { "type": "whoosh", "scene": 5, "at": 0.4, "duration": 1.6, "volume": 0.14 },
+  { "type": "pop", "scene": 5, "at": 2.0, "volume": 0.3 },
+  { "type": "chime", "scene": 5, "at": 4.45, "volume": 0.35 },
+  { "type": "pop", "scene": 6, "at": 1.6, "volume": 0.4 },
+  { "type": "chime", "scene": 6, "at": 2.5, "volume": 0.3 },
+  { "type": "tick", "scene": 6, "at": 4.0, "volume": 0.3 }
+]
